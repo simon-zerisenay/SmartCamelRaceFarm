@@ -12,7 +12,7 @@ const Footer = () => {
       <div className='const-div padding-container max-container flex w-full flex-col gap-5 mx-20'>
         <div className='flex flex-col items-start justify-center gap-[10%] md:flex-row'>
           <Link href='https://www.frc.ae/' className='mb-10'>
-            <Image src='/logo.png' alt='logo' height={100} width={200} />
+            <Image src='/LOGO1.png' alt='logo' height={100} width={200} />
           </Link>
 
           <div className='flex flex-wrap gap-10 sm:justify-between md:flex-1'>

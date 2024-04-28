@@ -25,7 +25,7 @@ const NavBar = () => {
   return (
     <nav className={`flex justify-between px-10 items-center w-full fixed z-50 bg-slate-50 dark:bg-black  p-0 m-0 ${scrolling ? '' : 'md:bg-opacity-0 md:dark:bg-opacity-0 '}  text-black dark:text-white`}>
       <Link href='/'>
-        <Image src='/logo.png' alt='logo' height={20} width={100} />
+        <Image src='/LOGO1.png' alt='logo' height={20} width={100} />
       </Link>
 
       <ul className='hidden h-full gap-12 md:flex   items-center'>
