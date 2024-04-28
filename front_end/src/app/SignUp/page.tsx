@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
-import PhoneInput from 'react-phone-number-input'
-import {  E164Number , PhoneNumber } from 'libphonenumber-js'
+//import PhoneInput from 'react-phone-number-input'
+//import {  E164Number , PhoneNumber } from 'libphonenumber-js'
 import React, { useEffect, useState, ChangeEvent } from "react";
 import { useFormContext } from "../../../context/context";
 
@@ -59,7 +59,7 @@ export default function SignUp() {
   const handleGoogleLogin = async () => {
     try {
       setIsLoading(true);
-      const response = await fetch("http://localhost:3006/oAuthRegister", {
+      const response = await fetch(`http://localhost:3007/oAuthRegister`, {
         method: "POST",
       });
       const { url } = await response.json();
@@ -139,7 +139,7 @@ export default function SignUp() {
 
   const handleRegister = async () =>{
     try {
-      const response = await fetch(`${urlPath}/register`, {
+      const response = await fetch(`http://localhost:3007/register`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

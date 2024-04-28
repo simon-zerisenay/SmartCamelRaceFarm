@@ -1,12 +1,15 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 import Link from "next/link";
-import PhoneInput from 'react-phone-number-input'
-import {  E164Number , PhoneNumber } from 'libphonenumber-js'
 import Image from "next/image";
 import React, { useEffect, useState, ChangeEvent } from "react";
 import { useFormContext } from "../../../context/context";
 
+
+
 export default function Login() {
+   
+  
   interface FormErrors {
     name?: string;
     email?: string;
@@ -70,7 +73,7 @@ const validateForm = (): boolean => {
 const handleGoogleLogin = async () => {
   try {
     setIsLoading(true);
-    const response = await fetch("http://localhost:3006/oAuthRegister", {
+    const response = await fetch("http://localhost:3007/oAuthRegister", {
       method: "POST",
     });
     const { url } = await response.json();
@@ -87,7 +90,7 @@ const handleLogin = async () => {
     try {
       setIsLoading(true);
       const newErrors: FormErrors = {};
-      const response = await fetch("http://localhost:3006/login", {
+      const response = await fetch(`http://localhost:3007/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
