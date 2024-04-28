@@ -23,7 +23,7 @@ const NavBar = () => {
   }, []);
 
   return (
-    <nav className={`flex justify-between px-10 items-center w-full fixed z-50 bg-slate-50 dark:bg-black  p-0 m-0 ${scrolling ? '' : 'md:bg-opacity-0 md:dark:bg-opacity-0 text-white'}  text-gray-900 dark:text-white`}>
+    <nav className={`flex justify-between px-10 items-center w-full fixed z-50 bg-slate-50 dark:bg-black  p-0 m-0 ${scrolling ? '' : 'md:bg-opacity-0 md:dark:bg-opacity-0 '}  text-black dark:text-white`}>
       <Link href='/'>
         <Image src='/logo.png' alt='logo' height={20} width={100} />
       </Link>
