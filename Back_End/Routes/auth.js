@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const RegisterUser = require("../controller/Register")
-const {OAuthRegister, getOAuthInfo} = require("../controller/OAuth")
+const {OAuthRegister, getOAuthInfo} = require("../controller/oAuth")
 const Login = require("../controller/Login");
 
 //email authentication
